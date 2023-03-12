@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61a51e07-f811-41a1-a401-4b44f3fae19e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shujukuwork.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/Appartus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/AppartusExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/DeptExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/JobExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/PatientExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/Personnel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/PersonnelExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/UserExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/UserKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/bean/UserWithBLOBs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/config/AdminConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/controller/AppartusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/controller/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/controller/JobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/controller/PatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/controller/PersonnelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/mapper/AppartusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/mapper/DeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/mapper/JobMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/mapper/PatientMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/mapper/PersonnelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/service/AppartusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/service/JobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/service/PatientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liu/service/PersonnelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/DeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/JobMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PatientMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PersonnelMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/my.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/appartus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/emps.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/patients.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/renshi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/MainApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/Appartus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/AppartusExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/AppartusExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/AppartusExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/AppartusExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/Dept.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/DeptExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/DeptExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/DeptExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/DeptExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/Job.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/JobExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/JobExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/JobExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/JobExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/Patient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/PatientExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/PatientExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/PatientExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/PatientExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/Personnel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/PersonnelExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/PersonnelExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/PersonnelExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/PersonnelExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/UserExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/UserExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/UserExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/UserExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/UserKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/bean/UserWithBLOBs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/config/AdminConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/controller/AppartusController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/controller/DeptController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/controller/JobController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/controller/PatientController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/controller/PersonnelController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/mapper/AppartusMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/mapper/DeptMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/mapper/JobMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/mapper/PatientMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/mapper/PersonnelMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/service/AppartusService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/service/DeptService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/service/JobService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/service/PatientService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/liu/service/PersonnelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/AppartusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/DeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/JobMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/PatientMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/PersonnelMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/my.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/appartus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/common.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/emps.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/patients.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/renshi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/Test.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven-repo" />
+        <option name="mavenHome" value="D:\maven\apache-maven-3.6.3-bin\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ItTGUjl1sILhNhObQ6xvcX4PxU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="liu.service" />
+      <recent name="liu.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\JAVA-MVC-Swing-Monopoly-master\shujukuwork\src\main\java" />
+      <recent name="D:\github\JAVA-MVC-Swing-Monopoly-master\shujukuwork\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MainApplication (1)">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobService.queryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shujukuwork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="liu.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="liu.service" />
+      <option name="MAIN_CLASS_NAME" value="liu.service.JobService" />
+      <option name="METHOD_NAME" value="queryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shujukuwork" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shujukuwork" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="liu.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shujukuwork" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.boot.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test.test" />
+        <item itemvalue="JUnit.JobService.queryAll" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61a51e07-f811-41a1-a401-4b44f3fae19e" name="Default Changelist" comment="" />
+      <created>1670999785441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670999785441</updated>
+      <workItem from="1670999786488" duration="4029000" />
+      <workItem from="1671521610371" duration="16313000" />
+      <workItem from="1671607390143" duration="19520000" />
+      <workItem from="1671778137264" duration="10852000" />
+      <workItem from="1671955209487" duration="17695000" />
+      <workItem from="1672036592332" duration="1814000" />
+      <workItem from="1672124797391" duration="6000" />
+      <workItem from="1672124814749" duration="2992000" />
+      <workItem from="1672317122491" duration="5349000" />
+      <workItem from="1672387259531" duration="2358000" />
+      <workItem from="1672585889905" duration="264000" />
+      <workItem from="1672629134767" duration="739000" />
+      <workItem from="1672913927910" duration="24000" />
+      <workItem from="1676104825638" duration="743000" />
+      <workItem from="1676174829793" duration="666000" />
+      <workItem from="1678632155081" duration="559000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="519" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1671000141135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="519" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1671000141135" />
+    <state x="732" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1671974467696">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="732" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1671974467696" />
+    <state x="534" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1671000058187">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="534" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1671000058187" />
+    <state x="702" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1671521642892">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="702" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1671521642892" />
+    <state x="657" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1671957784356">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="657" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1671957784356" />
+    <state x="611" y="283" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1671617310381">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="611" y="283" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1671617310381" />
+    <state x="707" y="167" key="FileChooserDialogImpl" timestamp="1678632440171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="707" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1678632440171" />
+    <state width="1493" height="232" key="GridCell.Tab.0.bottom" timestamp="1676181592502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1676181592502" />
+    <state width="1493" height="232" key="GridCell.Tab.0.center" timestamp="1676181592501">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1676181592501" />
+    <state width="1493" height="232" key="GridCell.Tab.0.left" timestamp="1676181592501">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1676181592501" />
+    <state width="1493" height="232" key="GridCell.Tab.0.right" timestamp="1676181592501">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1676181592501" />
+    <state width="1493" height="232" key="GridCell.Tab.1.bottom" timestamp="1676181592502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1676181592502" />
+    <state width="1493" height="232" key="GridCell.Tab.1.center" timestamp="1676181592502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1676181592502" />
+    <state width="1493" height="232" key="GridCell.Tab.1.left" timestamp="1676181592502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1676181592502" />
+    <state width="1493" height="232" key="GridCell.Tab.1.right" timestamp="1676181592502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1676181592502" />
+    <state width="1493" height="248" key="GridCell.Tab.2.bottom" timestamp="1672326103336">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1672326103336" />
+    <state width="1493" height="248" key="GridCell.Tab.2.center" timestamp="1672326103336">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1672326103336" />
+    <state width="1493" height="248" key="GridCell.Tab.2.left" timestamp="1672326103336">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1672326103336" />
+    <state width="1493" height="248" key="GridCell.Tab.2.right" timestamp="1672326103336">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1672326103336" />
+    <state x="428" y="57" key="SettingsEditor" timestamp="1678632303344">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="428" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1678632303344" />
+    <state x="468" y="144" width="600" height="536" key="find.popup" timestamp="1678632354008">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="468" y="144" width="600" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1678632354008" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1671627447641">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1671627447641" />
+    <state x="589" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1671960409016">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="589" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1671960409016" />
+  </component>
+</project>

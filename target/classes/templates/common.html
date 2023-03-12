@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <title th:replace="${title}">Title</title>
+    <script type="text/javascript" th:src="@{/js/jquery-1.12.4.min.js}"></script>
+    <link th:href="@{/bootstrap-3.3.7-dist/css/bootstrap.min.css}" rel="stylesheet">
+    <script th:src="@{/bootstrap-3.3.7-dist/js/bootstrap.min.js}"></script>
+    <style>
+
+        th {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row" th:fragment="menu(n)">
+        <nav class="navbar navbar-default navbar-inverse">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li th:classappend="${n == 0} ? 'active'"><a th:href="@{/}"><i class="glyphicon glyphicon-home"></i>主页</a></li>
+                        <li th:classappend="${n == 1} ? 'active'"><a th:href="@{/emps}">员工管理</a></li>
+                        <li th:classappend="${n == 2} ? 'active'"><a th:href="@{/patients}">病人管理</a></li>
+                        <li th:classappend="${n == 3} ? 'active'"><a th:href="@{/renshi}">人事调动</a></li>
+                        <li th:classappend="${n == 4} ? 'active'"><a th:href="@{/toappartus}">仪器管理</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li th:classappend="${n == 0} ? 'active'"><a th:href="@{/}">Action</a></li>
+                                <li th:classappend="${n == 1} ? 'active'"><a th:href="@{/emps}">Another action</a></li>
+                                <li th:classappend="${n == 2} ? 'active'"><a th:href="@{/patients}">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

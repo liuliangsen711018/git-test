@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head th:replace="common :: head(~{::title})">
+    <meta charset="UTF-8">
+    <title>仪器管理</title>
+
+</head>
+<body>
+<div th:replace="common :: menu(4)">
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>仪器号</th>
+                <th>仪器名</th>
+                <th>仪器价格</th>
+                <th>仪器数量</th>
+                <th>备注</th>
+            </tr>
+            </thead>
+            <tbody id="table_body">
+            <!-- 通过函数加载数据 -->
+            </tbody>
+        </table>
+        <form class="form-inline" th:action="@{/saveAppartus}" method="post">
+            <div class="form-group">
+                <label>仪器号</label>
+                <input type="text" class="form-control" style="width: 100px" name="appartusId" placeholder="1">
+            </div>
+            <div class="form-group">
+                <label>仪器名</label>
+                <input type="text" class="form-control" style="width: 100px" name="appartusname" placeholder="门诊部">
+            </div>
+            <div class="form-group">
+                <label>价格</label>
+                <input type="text" class="form-control" style="width: 100px" name="appartusPrice" placeholder="1">
+            </div>
+            <input type="text" class="form-control hidden" name="appartusQuantity" placeholder="1" value="0">
+            <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i>新增仪器</button>
+        </form>
+
+    </div>
+    <div class="col-md-6">
+        <form class="form-inline" th:action="@{/buyAppartus}" method="get">
+            <div class="form-group">
+                <label>购买仪器</label>
+                <select class="form-control emp_select" style="width: 100px" name="id"></select>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="num">
+                <label>件</label>
+            </div>
+            <button type="submit" class="btn btn-primary">确认</button>
+        </form>
+        <form class="form-inline" th:action="@{/sellAppartus}" method="get">
+            <div class="form-group">
+                <label>卖出仪器</label>
+                <select class="form-control emp_select" style="width: 100px" name="id"></select>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="num">
+                <label>件</label>
+            </div>
+            <button type="submit" class="btn btn-danger">确认</button>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    /* ================================================ 全局变量 ================================================ */
+
+    var totalRecord; // 用于跳转到末页
+    var currentPage // 用于完成请求后刷新页面
+    /* ================================================ 函数 ================================================ */
+    // 初始化页面时需要调用的函数
+    $(function () {
+        // 去首页
+        to_page();
+        getAppartus(".emp_select");
+    });
+
+    function getAppartus(ele) {
+        $.ajax({
+            url: "[[@{/appartus}]]",
+            type: "GET",
+            success: function (result) {
+                $.each(result, function () {
+                    var optionElement = $("<option></option>").append(this.appartusname).attr("value", this.appartusId);
+                    optionElement.appendTo(ele);
+                })
+            }
+        })
+    }
+
+    // 页面跳转函数
+    function to_page() {
+        $.ajax({
+            url: "[[@{/appartus}]]",
+            type: "GET",
+            success: function (result) {
+                // 1.解析员工数据
+                build_emps_table(result);
+            }
+        });
+    }
+    var vpn_return;
+    eval(vpn_rewrite_js((function () {
+        j=-1;
+        for(i=0;i<3;i++)
+            if(orderst[i].checked)
+                j=i;
+            if(j==-1) {
+                alert('请选择志愿！');
+                return;
+            }
+            onSelect(j+1,4775,1,j+1) }).toString().slice(14, -2), 2));
+    return vpn_return;
+    function query(pn) {
+        $.ajax({
+            url: "[[@{/patient/}]]" + $("#query_select").val() + "/" + $("#input_text").val(),
+            data: "pn=" + pn,
+            type: "GET",
+            success: function (result) {
+                // 1.解析员工数据
+                build_emps_table(result);
+                // 2. 解析并显示分页信息
+                build_page_info(result);
+                // 3. 解析显示分页条码
+                build_page_nav(result);
+            }
+        });
+    }
+
+    // 解析表格数据函数
+    function build_emps_table(result) {
+        // 清空表格信息
+        $("#personnels_table tbody").empty();
+        // 获取员工列表
+        var patients = result;
+        // 遍历员工列表，构建表格
+        $.each(patients, function (index, item) {
+            var appartusId = $("<td></td>").append(item.appartusId);
+            var appartusname = $("<td></td>").append(item.appartusname);
+            var appartusPrice = $("<td></td>").append(item.appartusPrice);
+            var appartusQuantity = $("<td></td>").append(item.appartusQuantity);
+            var appartusRem = $("<td></td>");
+            if (item.appartusRem == null) {
+                appartusRem.append("无");
+            } else {
+                appartusRem.text(item.appartusRem);
+            }
+            if (item.appartusQuantity == null) {
+                appartusQuantity.append("0");
+            } else {
+                appartusRem.text(item.appartusQuantity);
+            }
+            // 注入按钮数据
+            $("<tr></tr>")
+                .append(appartusId)
+                .append(appartusname)
+                .append(appartusPrice)
+                .append(appartusQuantity)
+                .append(appartusRem)
+                .appendTo("#table_body");
+        });
+    }
+
+
+    // 根据id查询员工信息函数
+    function getPatientById(id) {
+        $.ajax({
+            url:"[[@{/emp/}]]" + id,
+            type:"GET",
+            success:function (result) {
+                var empData = result;
+                $("#empNo_Update_input").val(empData.empNo);
+                $("#empName_Update_input").val(empData.empName);
+                $("#deptId_Update_select").val(empData.empDeptId);
+                $("#empDuty_Update_input").val(empData.empDuty);
+                $("#deptXl_Update_select").val(empData.empXl);
+                if (empData.empGender === "M") {
+                    $("#empGender_update_input").prop("checked", true);
+                } else {
+                    $("#empGender_update_input2").prop("checked", true);
+                }
+                $("#empBirthday_update_input").val(empData.empBirthday);
+                $("#empHometown_Update_input").val(empData.empHometown);
+                $("#empCountry_Update_input").val(empData.empCountry);
+                $("#empNation_Update_input").val(empData.empNation);
+                $("#empId_Update_input").val(empData.empId);
+                if (empData.empMarriage === 1) {
+                    $("#empMarriage_Update_input").prop("checked", true);
+                } else {
+                    $("#empMarriage_Update_input2").prop("checked", true);
+                }
+                $("#empTeleNo_Update_input").val(empData.empTeleno);
+                $("#empEmail_Update_input").val(empData.empEmail);
+            }
+        })
+    }
+
+
+    function getEmpById(id) {
+        $.ajax({
+            url:"[[@{/patient/}]]" + id,
+            type:"GET",
+            success:function (result) {
+                var empData = result;
+                $("#patientNo_update").val(empData.patientNo);
+                $("#patientName_update").val(empData.patientName);
+                if (empData.patientGender === "M") {
+                    $("#patientGender_update").prop("checked", true);
+                } else {
+                    $("#patientGender_update2").prop("checked", true);
+                }
+                $("#patientDateStart_update").val(empData.patientDateStart);
+                $("#patientRoom_update").val(empData.patientRoom);
+            }
+        })
+    }
+
+    /* ============================================== 按钮绑定事件区 ============================================== */
+    // 添加员工按钮事件
+    $("#emp_add_modal_btn").click(function () {
+        // 表单重置数据
+        reset_form("#empAddModal");
+        $("#empAddModal").modal({
+            backdrop: "static"
+        })
+    })
+
+    // 模态框保存按钮点击事件
+    $("#saveEmpBtn").click(function () {
+        $.ajax({
+            url: "[[@{/patient}]]",
+            type: "POST",
+            data: $("#empAddModal form").serialize(),
+            success: function (result) {
+                console.log(result)
+                if(true) {
+                    // 员工保存成功
+                    // 1. 关闭模态框
+                    $("#empAddModal").modal('hide')
+                    // 2. 跳转到最后一页显示
+                    to_page(totalRecord)
+                } else {
+                    // 显示失败信息
+                    if(undefined !== result.extend.errorFields.empEmail){
+                        validate_add_from_information_show("#empEmail_add_input", "error", "邮箱格式不正确")
+                    }
+                    if(undefined !== result.extend.errorFields.empName){
+                        validate_add_from_information_show("#empName_add_input", "error", "员工名称格式不正确")
+                    }
+                }
+            }
+        })
+    })
+
+    // 为修改员工按钮添加事件
+    // 因为是先绑定事件后在生成的按钮，所以不能用click
+    // 早先版本的jQuery可以使用live方法
+    // 这里使用 on 方法绑定
+    $(document).on("click", ".edit_btn", function () {
+        reset_form("#empUpdateModal")
+        // 1. 查询部门信息显
+        // 2. 回显员工信息
+        getEmpById($(this).attr("empId_for_edit"));
+        // 3. 传递id給更新按钮
+        $("#updateEmpBtn").attr("empId_for_edit", $(this).attr("empId_for_edit"));
+        // 4. 跳出模态框
+        $("#empUpdateModal").modal({
+            backdrop: "static"
+        })
+    })
+
+    // 绑定更新按钮单击事件
+    $("#updateEmpBtn").click(function () {
+        // 1. 校验表单数据
+        // if (!verifyUsername("#empName_update_input") || !checkMailbox("#empEmail_update_input")) {
+        //     return false
+        // }
+        // 2. 发送更新的Ajax请求
+
+        $.ajax({
+            url:"[[@{/updatePatient}]]",
+            type:"PUT",
+            data:$("#empUpdateModal form").serialize(),
+            success:function (result) {
+                if(true) {
+                    // 员工更新成功
+                    // 1. 关闭模态框
+                    $("#empUpdateModal").modal('hide')
+                    // 2. 刷新页面
+                    to_page(currentPage)
+                } else {
+                    // 显示失败信息
+                    if(undefined !== result.extend.errorFields.empEmail){
+                        validate_add_from_information_show("#empEmail_update_input", "error", "邮箱格式不正确")
+                    }
+                    if(undefined !== result.extend.errorFields.empName){
+                        validate_add_from_information_show("#empName_update_input", "error", "员工名称格式不正确")
+                    }
+                }
+            }
+        })
+    })
+
+    // 单个删除按钮事件
+    $(document).on("click", ".del_btn", function (){
+        var empName = $(this).parents("tr").find("td:eq(2)").text()
+        var empNo = $(this).parents("tr").find("td:eq(1)").text()
+        if(confirm("确认删除【" + empName + "】吗？")) {
+            // 确认则发送Ajax请求
+            $.ajax({
+                url:"[[@{/patient/}]]" + empNo,
+                type:"DELETE",
+                success:function (result) {
+                    console.log(result)
+                    // 刷新页面
+                    to_page(currentPage)
+                }
+            })
+        }
+    })
+
+    // 全选按钮绑定事件
+    $("#check_all").click(function () {
+        // attr获取checked属性时undefined
+        // dom原生的属性需要用prop获取，attr获取自定义的属性
+        $(".check_item").prop("checked", $(this).prop("checked"))
+    })
+
+    // 选项按钮绑定事件，当所有按钮被选中时，同时选中全选按钮
+    $(document).on("click", ".check_item", function () {
+        var flag = $(".check_item:checked").length === $(".check_item").length
+        $("#check_all").prop("checked", flag)
+    })
+
+    // 删除全部选中员工按钮事件
+    $("#delete_all_emp_btn").click(function () {
+        var empIds = ""
+        $.each($(".check_item:checked"), function () {
+            empIds += $(this).parents("tr").find("td:eq(1)").text() + "-"
+        })
+        // 删除最后一个 "-"
+        empIds.substring(0, empIds.length-1)
+        if(confirm("确认删除所有员工吗？")) {
+            $.ajax({
+                url:"[[@{/patient/}]]" + empIds,
+                type:"DELETE",
+                success:function (result) {
+                    console.log(result);
+                    to_page(currentPage);
+                    // 重置全选按钮为未选中状态
+                    $("#check_all").prop("checked", false);
+                }
+            })
+        }
+    })
+
+    $("#query").click(function () {
+        $("#table_par").addClass("pre-scrollable");
+        $(".fenye").addClass("hidden");
+        query(1);
+    })
+    $("#query_all").click(function () {
+        $("#table_par").removeClass("pre-scrollable");
+        $(".fenye").removeClass("hidden");
+        to_page(1);
+    })
+</script>
+</body>
+</html>
